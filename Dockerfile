@@ -44,8 +44,5 @@ RUN $NUPIC/build.sh
 # Cleanup
 RUN rm setuptools*
 
-# OPF needs this (It's a workaround. We can create a user, but I wanted to keep this image clean to use as base to my projects)
-ENV USER docker
-
 # Default directory
 WORKDIR /home/docker
